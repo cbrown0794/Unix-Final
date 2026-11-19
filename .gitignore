@@ -1,0 +1,19 @@
+# Secrets & Environment Files
+.env
+.env.*
+*.pem
+*.key
+*service-account*.json
+credentials.json
+
+# Terraform State & Variables
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Local Model Weights & Data
+models/
+data/
+__pycache__/
