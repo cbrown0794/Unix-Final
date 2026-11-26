@@ -6,6 +6,23 @@ services:
       - "11434:11434"
     volumes:
       - ollama-models:/root/.ollama
+    restart: unless-stopped
+
+  ollama-init:
+    image: ollama/ollama:0.40.18
+    container_name: ollama-init
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ollama-models:/root/.ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "until ollama list >/dev/null 2>&1; do sleep 2; done &&
+      ollama pull llama3.2:1b &&
+      ollama pull nomic-embed-text"
+    restart: "no"
 
 volumes:
   ollama-models:
