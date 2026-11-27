@@ -1,0 +1,15 @@
+﻿---DURING BENCHMARK---
+$ docker exec ollama-a ollama ps
+NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL   
+qwen2.5:3b    357c53fb659c    2.2 GB    100% CPU     4096       llamacpp    Forever    
+$ docker stats --no-stream
+CONTAINER ID   NAME       CPU %     MEM USAGE / LIMIT   MEM %     NET I/O          BLOCK I/O         PIDS
+4aa6dad9e72a   ollama-a   148.36%   3.159GiB / 4GiB     78.99%    4.85GB / 246MB   7.17GB / 4.23GB   52
+
+---POST BENCHMARK---
+$ docker exec ollama-a ollama ps
+NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL   
+qwen2.5:3b    357c53fb659c    2.2 GB    100% CPU     4096       llamacpp    Forever    
+$ docker stats --no-stream
+CONTAINER ID   NAME       CPU %     MEM USAGE / LIMIT   MEM %     NET I/O          BLOCK I/O         PIDS
+4aa6dad9e72a   ollama-a   0.01%     3.172GiB / 4GiB     79.31%    4.85GB / 246MB   7.17GB / 4.23GB   52
