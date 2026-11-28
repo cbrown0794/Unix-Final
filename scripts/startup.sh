@@ -36,7 +36,7 @@ gcloud secrets versions access latest --secret="rag-db-password" > /run/rag-secr
 gcloud secrets versions access latest --secret="app-secret-key" > /run/rag-secrets/app_secret_key
 chmod 600 /run/rag-secrets/*
 
-# 4. Clone or update repo and start containers if docker-compose.yml exists
+# 4. Clone or update repo, generate runtime .env from .env.example, and start containers
 REPO_DIR="/opt/unix-final"
 if [ ! -d "$REPO_DIR/.git" ]; then
   git clone https://github.com/cbrown0794/Unix-Final.git "$REPO_DIR"
@@ -44,8 +44,12 @@ else
   git -C "$REPO_DIR" pull --ff-only || true
 fi
 
-if [ -f "$REPO_DIR/infra/docker-compose.yml" ]; then
+if [ -f "$REPO_DIR/.env.example" ] && [ ! -f "$REPO_DIR/.env" ]; then
+  cp "$REPO_DIR/.env.example" "$REPO_DIR/.env"
+fi
+
+if [ -f "$REPO_DIR/docker-compose.yml" ]; then
   export DB_PASSWORD=$(cat /run/rag-secrets/db_password)
   export APP_SECRET_KEY=$(cat /run/rag-secrets/app_secret_key)
-  docker compose -f "$REPO_DIR/infra/docker-compose.yml" up -d
+  docker compose -f "$REPO_DIR/docker-compose.yml" up -d
 fi

@@ -15,7 +15,7 @@ services:
     ports:
       - "11434:11434"
     volumes:
-      - ollama-models:/root/.ollama
+      - /models:/root/.ollama
     cpus: 1.5
     mem_limit: 4G
     memswap_limit: 4G
@@ -37,7 +37,7 @@ services:
     ports:
       - "11435:11434"
     volumes:
-      - ollama-models:/root/.ollama
+      - /models:/root/.ollama
     cpus: 1.5
     mem_limit: 4G
     memswap_limit: 4G
@@ -66,5 +66,3 @@ services:
     mem_limit: 1G
     restart: "no"
 
-volumes:
-  ollama-models:
