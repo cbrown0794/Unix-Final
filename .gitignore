@@ -1,6 +1,7 @@
 # Secrets & Environment Files
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 *service-account*.json
@@ -14,6 +15,6 @@ credentials.json
 .terraform.lock.hcl
 
 # Local Model Weights & Data
-models/
-data/
+/models/
+/data/
 __pycache__/

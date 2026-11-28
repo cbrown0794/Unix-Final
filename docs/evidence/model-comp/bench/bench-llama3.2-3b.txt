@@ -1,0 +1,212 @@
+﻿
+
+Timestamp    : 2026-11-26 18:48:44
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 7.01
+PromptTokens : 42
+PromptSec    : 10.4
+TTFT_Sec     : 17.41
+GenTokens    : 107
+TokPerSec    : 0.9
+
+
+
+--- PROMPT ---
+Explain the difference between a process and a thread in Unix in 4 sentences.
+--- RESPONSE ---
+In Unix, a process is an independent unit of execution that runs on a computer, with its own memory space, resources, and system calls. A thread, on the other hand, is a lightweight process that shares the same memory space and resources as other threads within the same process. Threads are used to improve responsiveness and efficiency by allowing multiple tasks to run concurrently within a single process. In contrast, processes are isolated from each other and require their own memory space, making them more suitable for independent tasks that don't share resources.
+
+
+
+
+Timestamp    : 2026-11-26 18:51:05
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0
+PromptTokens : 42
+PromptSec    : 0.84
+TTFT_Sec     : 0.84
+GenTokens    : 106
+TokPerSec    : 1.3
+
+
+
+--- PROMPT ---
+Explain the difference between a process and a thread in Unix in 4 sentences.
+--- RESPONSE ---
+In Unix, a process is an independent unit of execution that runs on a computer, with its own memory space, resources, and system calls. A thread, on the other hand, is a lightweight process that shares the same memory space and resources as other threads within the same process. Threads are used to improve responsiveness and efficiency by allowing multiple tasks to run concurrently within a single process. In contrast, processes are isolated from each other and require their own memory space, making them more suitable for independent tasks that require exclusive resources.
+
+
+
+
+Timestamp    : 2026-11-26 18:52:25
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0.08
+PromptTokens : 42
+PromptSec    : 0.6
+TTFT_Sec     : 0.68
+GenTokens    : 106
+TokPerSec    : 1.3
+
+
+
+--- PROMPT ---
+Explain the difference between a process and a thread in Unix in 4 sentences.
+--- RESPONSE ---
+In Unix, a process is an independent unit of execution that runs on a computer, with its own memory space, resources, and system calls. A thread, on the other hand, is a lightweight process that shares the same memory space and resources as other threads within the same process. Threads are used to improve responsiveness and efficiency by allowing multiple tasks to run concurrently within a single process. In contrast, processes are isolated from each other and require their own memory space, making them more suitable for independent tasks that require exclusive resources.
+
+
+
+
+Timestamp    : 2026-11-26 18:53:47
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0.08
+PromptTokens : 42
+PromptSec    : 0.7
+TTFT_Sec     : 0.78
+GenTokens    : 106
+TokPerSec    : 1.3
+
+
+
+--- PROMPT ---
+Explain the difference between a process and a thread in Unix in 4 sentences.
+--- RESPONSE ---
+In Unix, a process is an independent unit of execution that runs on a computer, with its own memory space, resources, and system calls. A thread, on the other hand, is a lightweight process that shares the same memory space and resources as other threads within the same process. Threads are used to improve responsiveness and efficiency by allowing multiple tasks to run concurrently within a single process. In contrast, processes are isolated from each other and require their own memory space, making them more suitable for independent tasks that require exclusive resources.
+
+
+
+
+Timestamp    : 2026-11-26 18:55:33
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0
+PromptTokens : 89
+PromptSec    : 12.26
+TTFT_Sec     : 12.26
+GenTokens    : 24
+TokPerSec    : 0.9
+
+
+
+--- PROMPT ---
+Context: The nightly backup runs at 02:00 UTC. Backups are stored on the /data/db logical volume and kept for 14 days. Restores require the operator to run restore.sh with the snapshot name.
+
+Using only the context above, answer: How long are backups kept and where are they stored?
+--- RESPONSE ---
+According to the context, backups are kept for 14 days and are stored on the /data/db logical volume.
+
+
+
+
+Timestamp    : 2026-11-26 18:56:02
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0.08
+PromptTokens : 89
+PromptSec    : 1.19
+TTFT_Sec     : 1.27
+GenTokens    : 24
+TokPerSec    : 0.9
+
+
+
+--- PROMPT ---
+Context: The nightly backup runs at 02:00 UTC. Backups are stored on the /data/db logical volume and kept for 14 days. Restores require the operator to run restore.sh with the snapshot name.
+
+Using only the context above, answer: How long are backups kept and where are they stored?
+--- RESPONSE ---
+According to the context, backups are kept for 14 days and are stored on the /data/db logical volume.
+
+
+
+
+Timestamp    : 2026-11-26 18:56:32
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0
+PromptTokens : 89
+PromptSec    : 1.5
+TTFT_Sec     : 1.5
+GenTokens    : 24
+TokPerSec    : 0.8
+
+
+
+--- PROMPT ---
+Context: The nightly backup runs at 02:00 UTC. Backups are stored on the /data/db logical volume and kept for 14 days. Restores require the operator to run restore.sh with the snapshot name.
+
+Using only the context above, answer: How long are backups kept and where are they stored?
+--- RESPONSE ---
+According to the context, backups are kept for 14 days and are stored on the /data/db logical volume.
+
+
+
+
+Timestamp    : 2026-11-26 18:58:45
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0
+PromptTokens : 85
+PromptSec    : 4.77
+TTFT_Sec     : 4.77
+GenTokens    : 59
+TokPerSec    : 0.8
+
+
+
+--- PROMPT ---
+Context: The nightly backup runs at 02:00 UTC. Backups are stored on the /data/db logical volume and kept for 14 days. Restores require the operator to run restore.sh with the snapshot name.
+
+Using only the context above, answer: Which cloud region hosts the backups?
+--- RESPONSE ---
+We can't determine the cloud region that hosts the backups based on the provided context. The context only mentions the time of the nightly backup (02:00 UTC) and the location of the logical volume (/data/db), but it does not provide any information about the cloud provider or region.
+
+
+
+
+Timestamp    : 2026-11-26 18:59:52
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0
+PromptTokens : 85
+PromptSec    : 1.5
+TTFT_Sec     : 1.5
+GenTokens    : 59
+TokPerSec    : 0.9
+
+
+
+--- PROMPT ---
+Context: The nightly backup runs at 02:00 UTC. Backups are stored on the /data/db logical volume and kept for 14 days. Restores require the operator to run restore.sh with the snapshot name.
+
+Using only the context above, answer: Which cloud region hosts the backups?
+--- RESPONSE ---
+We can't determine the cloud region that hosts the backups based on the provided context. The context only mentions the time of the nightly backup (02:00 UTC) and the location of the logical volume (/data/db), but it does not provide any information about the cloud provider or region.
+
+
+
+
+Timestamp    : 2026-11-26 19:01:03
+Model        : llama3.2:3b
+Port         : 11434
+LoadSec      : 0
+PromptTokens : 85
+PromptSec    : 0.8
+TTFT_Sec     : 0.8
+GenTokens    : 59
+TokPerSec    : 0.8
+
+
+
+--- PROMPT ---
+Context: The nightly backup runs at 02:00 UTC. Backups are stored on the /data/db logical volume and kept for 14 days. Restores require the operator to run restore.sh with the snapshot name.
+
+Using only the context above, answer: Which cloud region hosts the backups?
+--- RESPONSE ---
+We can't determine the cloud region that hosts the backups based on the provided context. The context only mentions the time of the nightly backup (02:00 UTC) and the location of the logical volume (/data/db), but it does not provide any information about the cloud provider or region.
+
+
